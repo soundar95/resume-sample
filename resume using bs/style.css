@@ -1,0 +1,201 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  
+}
+body {
+  background-color: rgb(193, 193, 209);
+}
+.main-content {
+  min-height: 100vh;
+  width: 80%;
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+.left-section {
+ 
+  grid-column: span 2;
+  height: 100%;
+  background-color: rgb(9, 64, 100);
+}
+.right-section {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+   font-weight: 500;
+  grid-column: span 5;
+  height: 100%;
+  background-color: rgb(252, 245, 255);
+}
+.left-content {
+  padding: 1rem 2rem;
+}
+.profile {
+  width: 100%;
+  border-bottom: 1px solid white;
+}
+.profile img {
+  width: 100%;
+  border-radius: 50%;
+  border: 2px solid rgb(21, 44, 48);
+}
+.name {
+  font-size: 1.7rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgb(177, 163, 145);
+  padding: 1rem 0;
+}
+.career {
+  font-size: 1.2rem;
+  color: rgb(228, 122, 90);
+  text-transform: capitalize;
+  text-align: center;
+  letter-spacing: 1px;
+}
+.main-title{
+    text-transform: uppercase;
+    color: azure;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    padding-top: 2rem;
+}
+.contact-info ul{
+    padding-top: 1rem;
+    color:white;
+}
+.contact-info ul li{
+    padding: .4rem 0;
+    display: flex;
+    align-items: center;
+}
+.contact-info ul li i{
+    padding-right: 1rem;
+    font-size: 1.1rem;
+    color: wheat;
+}
+.skill-section ul li{
+    list-style-type: none;
+
+}
+.progress-bar{
+    width:100%;
+    height: .4rem;
+    background-color: rgb(189, 189, 189);
+    border-radius: 8px;
+    position: relative;
+}
+.skill-title{
+    text-transform: capitalize;
+    color: white;
+    line-height: 30px;
+}
+.progress{
+    height:100%;
+    position: absolute;
+    left:0;
+}
+.js-progress1{
+    width:70%;
+    background-color: rgb(45, 117, 180);
+}
+.js-progress2{
+    width:40%;
+    background-color: rgb(45, 117, 180);
+}
+.js-progress3{
+    width:80%;
+    background-color: rgb(45, 117, 180);
+}
+.js-progress4{
+    width:65%;
+    background-color: rgb(45, 117, 180);
+}
+.js-progress5{
+    width:80%;
+    background-color: rgb(45, 117, 180);
+}
+.js-progress6{
+    width:90%;
+    background-color: rgb(45, 117, 180);
+}
+.js-progress7{
+    width:65%;
+    background-color: rgb(45, 117, 180);
+}
+.js-progress8{
+    width:80%;
+    background-color: rgb(45, 117, 180);
+}
+.js-progress9{
+    width:65%;
+    background-color: rgb(45, 117, 180);
+}
+.js-progress10{
+    width:69%;
+    background-color: rgb(45, 117, 180);
+}
+.right-main-content{
+    padding: 2rem 3rem;
+}
+.right-title{
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    color: rgb(35, 93, 201);
+    margin-bottom: 1.2rem;
+    position: relative;
+}
+.right-title::after{
+    content: "";
+    position: absolute;
+    width: 40%;
+    height: .3rem;
+    background-color: rgb(18, 2, 88);
+    right: 0%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.para{
+    padding-top: 1rem;
+    color: brown;
+    letter-spacing: .5px;
+    font-size: 1.1rem;
+
+}
+.section-about{
+    padding-bottom: 2rem;
+}
+.projects{
+    padding-top: 2rem;
+}
+
+@media screen and (max-width:823px) {
+    .right-title::after{
+    width:40% }
+}
+@media screen and (max-width:400px) {
+    .right-title::after{
+    width:20% }
+}
+@media screen and (max-width:450px) {
+    .right-title::after{
+    width:30% }
+}
+@media screen and (max-width:681px) {
+    .right-title::after{}
+    width:30% ;
+}
+
+@media screen and (max-width:780px) {
+    .left-section{
+        grid-column: span 3;
+    }
+    .right-section{
+        grid-column: span 4;
+    }
+}
+@media screen and (max-width:700px) {
+    .main-content{
+ grid-template-columns: repeat(1,2fr);
+}
+}
