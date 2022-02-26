@@ -15,7 +15,6 @@ body {
   grid-template-columns: repeat(7, 1fr);
 }
 .left-section {
- 
   grid-column: span 2;
   height: 100%;
   background-color: rgb(9, 64, 100);
@@ -182,8 +181,9 @@ body {
     width:30% }
 }
 @media screen and (max-width:681px) {
-    .right-title::after{}
+    .right-title::after{
     width:30% ;
+}
 }
 
 @media screen and (max-width:780px) {
